@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+}
+body {
+  animation-name: color_change;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@-webkit-keyframes color_change {
+  from { background-color: rgb(193, 85, 255); }
+	to { background-color: rgb(42, 115, 199); }
+}
+@-moz-keyframes color_change {
+  from { background-color: rgb(193, 85, 255); }
+	to { background-color: rgb(42, 115, 199); }
+}
+@-ms-keyframes color_change {
+  from { background-color: rgb(193, 85, 255); }
+	to { background-color: rgb(42, 115, 199); }
+}
+@-o-keyframes color_change {
+  from { background-color: rgb(193, 85, 255); }
+	to { background-color: rgb(42, 115, 199); }
+}
+@keyframes color_change {
+  from { background-color: rgb(193, 85, 255); }
+	to { background-color: rgb(42, 115, 199); }
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 100vh solid #ffffff;
+  border-left: 65vw solid transparent;
+  position: fixed;
+  z-index: -100;
+  top: 0px;
+  right: 0px;
+}
+.container {
+  position: relative;
+  z-index: 100;
+  top: 10vh;
+}
+.content {
+  place-items: start;
+  margin: 0px 40px;
+}
+.content > h1 {
+  font-size: 40px;
+  font-family: 'Noto Sans Mono';
+  color: #1a1a1a;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.content > p {
+  font-size: 22px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #1b1b1b;
+  font-weight: 100;
+  max-width: 80%;
+  margin-top: 10px;
+}
+.contact {
+  margin: 90px 50px;
+}
+.contact > h1 {
+  font-size: 40px;
+  font-family: 'Noto Sans Mono';
+  color: #1a1a1a;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+.contact > .links {
+  display: flex;
+}
+.contact > .links > a {
+  margin-right: 50px;
+}
+.contact > .links > a > img {
+  width: 40px;
+}
+/* -------------------------------------------------------------------- */
+.form-container {
+  position: relative;
+  z-index: 100;
+  top: 10vh;
+}
+.form-container > a {
+  position: fixed;
+  top: 5vh;
+  margin-left: 30px;
+}
+.form-container > a:hover > img {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.form-container > a > img {
+  width: 40px;
+  border-radius: 50%;
+  border: 0px;
+}
+.form-container > form {
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.form-container > form > h1 {
+  font-size: 30px;
+  font-family: 'Noto Sans Mono';
+  color: #1a1a1a;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.form-container > form > label {
+  font-size: 16px;
+  font-family: 'Noto Sans Mono';
+  color: #1b1b1b;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.form-container > form > .text {
+  font-family: 'Noto Sans Mono';
+  resize: none;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff85;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  margin-bottom: 5px;
+  padding: 10px;
+  height: auto;
+}
+.form-container > form > input[type=submit] {
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: 'Noto Sans Mono';
+  font-size: 16px;
+  font-weight: 1000;
+  background-color: rgba(240, 46, 169, 0.829);
+}
+.form-container > form > input[type=submit]:hover {
+  background-color: rgba(240, 46, 169, 0.925);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.form-container > form > .text:focus {
+  outline: none;
+  border: solid 1px;
+  border-color: rgba(240, 46, 169, 0.829);
+}
+@media (min-width: 2560px) {
+  .content {
+    margin: 0% 20%;
+  }
+  .content > h1 {
+    font-size: 90px;
+  }
+  .content > p {
+    font-size: 50px;
+  }
+  .contact {
+    margin: 10% 40%;
+  }
+}
